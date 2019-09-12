@@ -7,4 +7,11 @@
         max-width: 950px;
         margin: 0 auto;
     }
-   
+    
+ @import 'src/sass/blocks/promo';
+ @import 'src/sass/blocks/header.scss';
+ @import 'src/sass/blocks/button.scss';
+ @import 'src/sass/blocks/advantage.scss';
+ @import 'src/sass/blocks/title.scss';
+ @import 'src/sass/blocks/consultation.scss';
+ @import 'src/sass/blocks/forms.scss'

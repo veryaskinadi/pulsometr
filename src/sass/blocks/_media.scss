@@ -14,6 +14,30 @@
     .consultation {
         padding: 100px 30px 92px 30px;
     }
+    .catalog {
+        &__content {
+            justify-content: center;
+        }   
+    }
+
+    .reviews {
+        &__block {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img {
+            display: block;
+            margin: 0 auto;
+        }
+        &__name {
+            margin-top: 15px;
+            text-align: center;
+        }
+        &__status {
+            text-align: center;
+        }
+    }
+        
 }
 
 @media (max-width: 767px) {
@@ -86,6 +110,37 @@
             font-size: 10px;
         }
     }
+
+    .catalog{
+        padding: 0 0 50px 0;
+        &__tabs {
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        &__tab {
+            transform: skewX(0deg);
+            margin-top: 5px;
+            div{
+                transform: skewX(0deg);
+            }
+        }
+        &__content {
+            margin-top: 30px;
+        }
+    }
+
+    .carousel__inner {
+        width: 380px;
+    }
+    .slick-slide img {
+        width: 100%;
+    }
+    .reviews {
+        padding: 0 15px 30px 15px;
+        &__descr{
+            max-width: 550px;
+        }
+    }
 }
 
 @media (max-width: 575px){
@@ -151,5 +206,16 @@
 
     .advantage {
         padding: 50px 30px 50px 30px;
+    }
+
+    .carousel__inner {
+        width: 320px;
+    }
+
+    .reviews {
+        padding: 0 15px 30px 15px;
+        &__descr{
+            max-width: 300px;
+        }
     }
 }

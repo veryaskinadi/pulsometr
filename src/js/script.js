@@ -32,6 +32,35 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    //modal
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #little').fadeOut('fast');
+    });
+    $(document).on('click', '.overlay', function(event) {
+        if ($(event.target).closest('.modal').length === 0) {
+            $('.overlay, #consultation, #order, #little').fadeOut('fast');
+        }
+    });
+    $(document).on('keydown', function(event) {
+        if (event.keyCode === 27) {
+            $('.overlay, #consultation, #order, #little').fadeOut('fast');
+        }
+    });
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        });
+    });
     
+    $('#consultation-form').validate();
+    $('#consultation form').validate();
+    $('#order form').validate();
+
   });
       

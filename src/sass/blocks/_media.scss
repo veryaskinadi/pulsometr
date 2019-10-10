@@ -19,7 +19,6 @@
             justify-content: center;
         }   
     }
-
     .reviews {
         &__block {
             flex-direction: column;
@@ -35,6 +34,18 @@
         }
         &__status {
             text-align: center;
+        }
+    }
+    .carousel {
+        &__inner {
+            ul {
+                width: 200px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                justify-content: space-between;
+            }
         }
     }
         
@@ -194,6 +205,8 @@
 
     .feed-form {
         padding: 0 30px 0 0px;
+        width: 250px;
+        margin-top: 15px;
     }
 
     .consultation{
@@ -227,6 +240,18 @@
         &__address {
             margin-bottom: 25px;
             font-size: 15px;
+        }
+    }
+    .modal {
+        width: 300px;
+        padding: 30px 40px 20px 40px;
+        &__subtitle {
+            font-size: 17px;
+            line-height: 16px;
+        }
+        &__descr {
+            line-height: 16px;
+            font-size: 12px;
         }
     }
 }

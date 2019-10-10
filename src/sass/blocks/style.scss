@@ -1,6 +1,7 @@
 @import 'src/sass/base/variables';
 *{
     font-family: Museo Sans, sans-serif;
+    outline: none;
 }
 
     .container{
@@ -19,4 +20,5 @@
  @import 'src/sass/blocks/catalog.scss';
  @import 'src/sass/blocks/reviews.scss';
  @import 'src/sass/blocks/footer.scss';
+ @import 'src/sass/blocks/modal.scss';
  @import 'src/sass/blocks/media.scss';

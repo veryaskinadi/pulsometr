@@ -24,4 +24,8 @@
         height: 40px;
         font-size: 14px;
     }
+    &:hover {
+        background-color: #DF0101;
+        box-shadow: 3px 3px 20px #6b6b6b;
+    }
 }

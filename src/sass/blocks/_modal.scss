@@ -46,6 +46,14 @@
     &_little {
        height: 140px;
     }
+    .error{
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
 
 #consultation, #order, #little {

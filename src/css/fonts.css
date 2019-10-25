@@ -20,10 +20,10 @@
 
 @font-face {
     font-family: 'Museo Sans';
-    src: url('MuseoSansCyrl-300.eot');
-    src: url('MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
-    url('MuseoSansCyrl-300.woff') format('woff'),
-    url('MuseoSansCyrl-300.ttf') format('truetype');
+    src: url('../fonts/MuseoSansCyrl-300.eot');
+    src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl-300.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     }

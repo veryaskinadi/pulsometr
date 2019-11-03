@@ -85,6 +85,18 @@ $(document).ready(function(){
                   required: "Пожалуйста, введите адрес электронной почты",
                   email: "Неправильно введен адрес почты"
                 }
+            },
+            submitHandler: function(form) {
+                $.ajax({
+                    type:'POST',
+                    url: "mailer/smart.php",
+                    data: $(form).serialize()
+                }).done(function() {
+                    $(form).find('input').val('');
+                    $('#consultation, #order').fadeOut();
+                    $('.overlay, #little').fadeIn();
+                    $('form').trigger('reset');
+                });
             }
         });
     }
@@ -93,22 +105,6 @@ $(document).ready(function(){
     ValidaForms('#order form');
     
     $('input[name=phone').mask("+7(999) 999-9999");
-
-    $('form').submit(function(e){
-        console.log('it works')
-        e.preventDefault();
-        $.ajax({
-            type:'POST',
-            url: "mailer/smart.php",
-            data: $(this).serialize()
-        }).done(function() {
-            $(this).find('input').val('');
-            $('#consultation, #order').fadeOut();
-            $('.overlay, #little').fadeIn();
-            $('form').trigger('reset');
-        });
-        return false;
-    });
 
     //scroll and pageup
     $(window).scroll(function() {
